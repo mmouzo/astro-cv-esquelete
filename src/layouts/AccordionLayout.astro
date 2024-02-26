@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon/components";
+import BaseLayout from "./BaseLayout.astro";
+const { title, icon } = Astro.props;
+---
+
+<BaseLayout>
+  <div class="collapse collapse-arrow">
+    <input aria-label={title} type="checkbox"/>
+    <div class="collapse-title font-extrabold tracking-tight md:text-2xl">
+      <div class="flex">
+        <Icon name={icon} class="w-8 h-8 mr-4" />
+        {title}
+      </div>
+    </div>
+    <div class="collapse-content">
+      <slot/>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .collapse {
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+import "@fontsource-variable/dm-sans";
+import Container from "../components/Container.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html data-theme="lofi" lang="gl">
+  <head>
+    <meta name="description" content="Portfolio e CvVde Martín Mouzo" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Cezar Kelso CV</title>
+  </head>
+  <body class="flex flex-col min-h-screen text-neutral-900">
+    <Header />
+    <div
+      class="divider bg-neutral-900 mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap"
+    >
+    </div>
+    <main
+      class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll py-2 grid w-[95vw]"
+    >
+      <div class="container">
+        <Container />
+      </div>
+    </main>
+    <Footer class="flex justify-center items-center py-4" />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    font-family: "DM Sans Variable", sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    * {
+      font-size: 12px;
+    }
+  }
+
+  .overflow-y-scroll::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .overflow-y-scroll::-webkit-scrollbar-thumb {
+    background-color: #171717;
+  }
+
+  .overflow-y-scroll {
+    scrollbar-width: 1px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+</style>
