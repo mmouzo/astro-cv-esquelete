@@ -21,23 +21,21 @@ import * as about from "../pages/about/about.md";
       <div
         class="flex justify-center md:justify-between items-center mb-2 relative"
       >
-        <h1
-          class="text-3xl text-neutral-900 font-extrabold tracking-tight md:text-3xl relative"
-        >
+        <h1 class="text-3xl font-extrabold tracking-tight md:text-3xl relative">
           {about.frontmatter.name}
           <div class="absolute top-0 left-full ml-2 -mt-4">
-            <div
-              class="badge w-max text-sm font-light text-neutral-800 badge-outline shadow-lg"
-            >
+            <div class="badge w-max text-sm font-light badge-outline shadow-lg">
               {about.frontmatter.pronouns}
             </div>
           </div>
         </h1>
       </div>
-      <h2 class="text-lg text-neutral-800 mb-2">{about.frontmatter.designation}</h2>
+      <h2 class="text-lg mb-2 text-secondary">
+        {about.frontmatter.designation}
+      </h2>
       <div class="flex items-center justify-center mt-1">
         <Icon name="carbon:location" class="w-4 h-4 mr-1" />
-        <p class="text-sm text-neutral-700">{about.frontmatter.location}</p>
+        <p class="text-sm text-secondary">{about.frontmatter.location}</p>
       </div>
     </div>
   </article>

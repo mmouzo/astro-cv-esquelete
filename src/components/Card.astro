@@ -4,7 +4,7 @@ const { timeframe, title, description, url, tags, url_name, location } =
   Astro.props;
 ---
 
-<div class="card card-compact card-bordered border border-[#171717] w-full md:w-112 lg:w-128 hover:shadow-lg transition-all my-4">
+<div class="card card-compact card-bordered border border-[oklch(var(--s))] w-full md:w-112 lg:w-128 hover:shadow-lg transition-all my-4">
   <div class="card-body">
     <div class="grid grid-cols-3 gap-4 mb-2">
       <div class="self-start col-span-2 justify-self-start text-left">
@@ -12,14 +12,14 @@ const { timeframe, title, description, url, tags, url_name, location } =
         {location && (
           <div class="flex items-center mt-2">
             <Icon name="carbon:location" class="w-4 h-4 mr-1" />
-            <p class="text-sm text-neutral-700 font-light">{location}</p>
+            <p class="text-sm  font-light text-secondary">{location}</p>
           </div>
         )}
       </div>
 
       <div class="self-center justify-self-end">
         {timeframe && (
-          <div class="badge w-max h-max text-center badge-outline text-neutral-800 inline-block align-middle shadow-md font-mono">
+          <div class="badge w-max h-max text-center badge-outline inline-block align-middle shadow-md font-mono">
             {timeframe}
           </div>
         )}
@@ -34,14 +34,14 @@ const { timeframe, title, description, url, tags, url_name, location } =
         {Array.isArray(tags) && (
           <div class="flex flex-wrap content-around gap-2 my-4">
             {tags.map((item) => (
-              <span class="badge text-center inline-block align-middle w-max h-max text-sm text-neutral-800 badge-outline shadow-md mb-1" :key={item}>{item}</span>
+              <span class="badge text-center inline-block align-middle w-max h-max text-sm  badge-outline shadow-md mb-1" :key={item}>{item}</span>
             ))}
           </div>
         )}
       </div>
 
       <div class="self-center justify-self-end">
-        <a href={url} target="_blank" class="link link-hover text-sm text-right flex justify-center items-center text-neutral-900">
+        <a href={url} target="_blank" class="link link-hover text-sm text-right flex justify-center items-center">
           {url_name}
           {url !== "#" && <Icon name="carbon:link" class="w-4 h-4 ml-2" />}
         </a>

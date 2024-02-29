@@ -3,21 +3,48 @@ import "@fontsource-variable/dm-sans";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import { Icon } from "astro-icon/components";
 ---
 
-<html data-theme="lofi" lang="gl">
+<html lang="gl">
   <head>
-    <meta name="description" content="Portfolio e CvVde Martín Mouzo" />
+    <script is:inline>
+      if (localStorage.getItem("theme") === null) {
+        document.documentElement.setAttribute("data-theme", "lofi");
+      } else
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme")
+        );
+    </script>
+    <script>
+      import { themeChange } from "theme-change";
+      themeChange();
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>Cezar Kelso CV</title>
   </head>
-  <body class="flex flex-col min-h-screen text-neutral-900">
+  <body class="flex flex-col min-h-screen">
     <Header />
     <div
-      class="divider bg-neutral-900 mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap"
+      class="flex items-center absolute top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 xl:top-10 xl:right-10 z-10"
+    >
+      <Icon name="carbon:moon" class="w-4 h-4" />
+      <input
+        type="checkbox"
+        data-toggle-theme="black,lofi"
+        data-act-class="ACTIVECLASS"
+        class="toggle toggle-sm mx-1"
+        checked
+      />
+      <Icon name="carbon:light" class="w-4 h-4" />
+    </div>
+
+    <div
+      class="divider mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-secondary"
     >
     </div>
     <main
