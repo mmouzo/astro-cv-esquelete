@@ -1,10 +1,22 @@
 ---
-title: Freelance developer
-date: 09/1998 - Present
+title: Tactical Team Leader
+date: 1985 - 1990
 url: http://atawajof.dz/vonilzor
 location: Los Angeles, California
-org: Heat Innovation
-tags: ["Cobol", "develop", "C++", "frontend", "backend", "wireshark"]
+org: Los Angeles County Sheriff's Department – SWAT Division
+tags:
+  [
+    "SWAT",
+    "Surveillance",
+    "Undercover Operations",
+    "Evidence Gathering",
+    "Case Solving",
+    "Interviewing Skills",
+  ]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- Led SWAT operations in high-risk situations, including hostage rescues, armed standoffs, and counter-terrorism missions.
+- Developed and implemented tactical plans tailored to specific scenarios, ensuring the safety of hostages, civilians, and law enforcement personnel.
+- Conducted specialized training for SWAT team members in firearms proficiency, close-quarters combat, tactical movement, and hostage negotiation.
+- Coordinated with local, state, and federal agencies to support joint operations and enhance interagency cooperation.
+- Provided expertise and assistance in the planning and execution of high-profile security details for visiting dignitaries, VIPs, and major events.

@@ -15,7 +15,7 @@ const PDF = "/cv-20240219.pdf";
 
 <div class="join join-vertical gap-1">
   <AccordionLayout title={"About"} icon={"carbon:identification"}>
-    <article class="prose text-justify">
+    <article class="text-justify">
       <Fragment set:html={about.compiledContent()} />
     </article>
   </AccordionLayout>
@@ -108,7 +108,7 @@ const PDF = "/cv-20240219.pdf";
   <AccordionLayout title={"Files"} icon={"carbon:volume-file-storage"}>
     <div class="flex justify-center w-full">
       <div
-        class="card card-compact card-bordered border-[oklch(var(--p))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
+        class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
       >
         <figure>
           <object data={PDF} type="application/pdf" width="100%"></object>

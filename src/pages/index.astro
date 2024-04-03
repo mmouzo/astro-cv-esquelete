@@ -37,7 +37,7 @@ import { Icon } from "astro-icon/components";
         type="checkbox"
         data-toggle-theme="black,lofi"
         data-act-class="ACTIVECLASS"
-        class="toggle toggle-sm mx-1"
+        class="toggle toggle-sm mx-1 bg-secondary"
         checked
       />
       <Icon name="carbon:light" class="w-4 h-4" />
@@ -81,7 +81,7 @@ import { Icon } from "astro-icon/components";
   }
 
   .overflow-y-scroll::-webkit-scrollbar-thumb {
-    background-color: #171717;
+    background-color: oklch(var(--s));
   }
 
   .overflow-y-scroll {

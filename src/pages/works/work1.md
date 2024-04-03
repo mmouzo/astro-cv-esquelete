@@ -1,10 +1,14 @@
 ---
-title: Bank accountant
-date: 05/1995 - 09/1998
+title: Senior Detective
+date: 1990 - Present
 url: http://ropibbe.nf/savadru
 location: Los Angeles, California
-org: Savadru Bank
-tags: ["accounting", "finance", "customer support", "management"]
+org: Los Angeles Police Department (LAPD)
+tags: ["Law Enforcement", "Police Work", "Tactical Operations", "Case Management"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- Lead investigations into organized crime, drug trafficking, and high-profile criminal activities.
+- Conducted extensive surveillance operations utilizing advanced equipment and techniques to gather critical intelligence.
+- Collaborated with federal agencies such as the FBI and DEA on joint task forces to dismantle criminal syndicates.
+- Played a pivotal role in numerous undercover operations, successfully infiltrating criminal organizations and gathering actionable evidence for prosecution.
+- Trained and mentored junior officers in surveillance tactics, undercover operations, and tactical maneuvers.

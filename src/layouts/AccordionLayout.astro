@@ -5,7 +5,7 @@ const { title, icon } = Astro.props;
 ---
 
 <BaseLayout>
-  <div class="collapse collapse-arrow">
+  <div class="collapse collapse-arrow ease-in-out duration-700">
     <input aria-label={title} type="checkbox"/>
     <div class="collapse-title font-extrabold tracking-tight md:text-2xl">
       <div class="flex">
@@ -18,10 +18,3 @@ const { title, icon } = Astro.props;
     </div>
   </div>
 </BaseLayout>
-
-<style>
-  .collapse {
-    transition-duration: 350ms;
-    transition-timing-function: ease-in-out;
-  }
-</style>

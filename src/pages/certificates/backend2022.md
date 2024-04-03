@@ -1,9 +1,9 @@
 ---
-title: Development of banking security systems
-org: Campus Akazedu TIC
-tags: [cobol, C++, C#, kali linux]
+title: Certified Tactical Emergency Medical Technician (TEMT)
+org: 123 Main Street, Los Angeles
+tags: [Tactical Medicine, First Aid Training, Critical Care, Triage Protocol]
 url: http://akazedu.edu/seaghi
-date: 09/2022 - 11/2022
+date: 1992
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The Tactical Emergency Medical Technician (TEMT) certification trains healthcare professionals to provide advanced medical care in tactical and high-risk environments, such as law enforcement operations, military settings, or emergency response scenarios. TEMTs are trained to rapidly assess and treat traumatic injuries, stabilize patients in adverse conditions, and closely collaborate with tactical and rescue teams to ensure the safety and well-being of victims.

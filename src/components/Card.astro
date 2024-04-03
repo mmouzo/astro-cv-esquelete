@@ -28,7 +28,7 @@ const { timeframe, title, description, url, tags, url_name, location } =
 
     <div class="grid grid-cols-3 gap-4 place-items-center">
       <div class="self-start col-span-2 justify-self-start text-left">
-        <article class="prose">
+        <article class="prose text-secondary">
           <Fragment set:html={description}></Fragment>
         </article>
         {Array.isArray(tags) && (
