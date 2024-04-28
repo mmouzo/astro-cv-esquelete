@@ -1,14 +1,14 @@
 ---
-title: Senior Detective
-date: 1990 - Present
-url: http://ropibbe.nf/savadru
-location: Los Angeles, California
-org: Los Angeles Police Department (LAPD)
-tags: ["Law Enforcement", "Police Work", "Tactical Operations", "Case Management"]
+title: Full Stack Software Engineer
+date: Dec 2022 - Present
+url: https://www.nexthope.net/
+location: Antananarivo, Madagascar
+org: Nexthope
+tags: ["Laravel", "Javascript", "AWS", "Network System", "PHP", "Python", "Docker", "DBMS", "SQL", "NoSQL"]
 ---
 
-- Lead investigations into organized crime, drug trafficking, and high-profile criminal activities.
-- Conducted extensive surveillance operations utilizing advanced equipment and techniques to gather critical intelligence.
-- Collaborated with federal agencies such as the FBI and DEA on joint task forces to dismantle criminal syndicates.
-- Played a pivotal role in numerous undercover operations, successfully infiltrating criminal organizations and gathering actionable evidence for prosecution.
-- Trained and mentored junior officers in surveillance tactics, undercover operations, and tactical maneuvers.
+- Developed and maintained web applications using Laravel, JavaScript, Python and other technologies, ensuring high performance and reliability.
+- Designed and implemented scalable and efficient network systems on AWS infrastructure, utilizing services such as EC2, S3, and Lambda.
+- Implemented Docker containers for application deployment, streamlining development processes and improving deployment efficiency.
+- Managed database systems using various DBMS including MySQL, PostgreSQL, and MongoDB, optimizing database performance and ensuring data integrity.
+- Collaborated with cross-functional teams to deliver feature-rich applications within tight deadlines, adhering to Agile development methodologies.

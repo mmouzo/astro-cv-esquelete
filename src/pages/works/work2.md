@@ -1,22 +1,10 @@
 ---
-title: Tactical Team Leader
-date: 1985 - 1990
-url: http://atawajof.dz/vonilzor
-location: Los Angeles, California
-org: Los Angeles County Sheriff's Department – SWAT Division
-tags:
-  [
-    "SWAT",
-    "Surveillance",
-    "Undercover Operations",
-    "Evidence Gathering",
-    "Case Solving",
-    "Interviewing Skills",
-  ]
+title: Developer Intern
+date: Jun 2022 - Nov 2022 (6 months)
+url: https://www.nexthope.net/
+location: Antananarivo, Madagascar
+org: Nexthope
+tags: ["React", "Javascript", "Python", "Django", "MySQL", "Seats.io", "Symfony"]
 ---
-
-- Led SWAT operations in high-risk situations, including hostage rescues, armed standoffs, and counter-terrorism missions.
-- Developed and implemented tactical plans tailored to specific scenarios, ensuring the safety of hostages, civilians, and law enforcement personnel.
-- Conducted specialized training for SWAT team members in firearms proficiency, close-quarters combat, tactical movement, and hostage negotiation.
-- Coordinated with local, state, and federal agencies to support joint operations and enhance interagency cooperation.
-- Provided expertise and assistance in the planning and execution of high-profile security details for visiting dignitaries, VIPs, and major events.
+Development of the Ticketplace POS (Point Of Sale) App for the Ticketplace platform: improvement of the sales process, UX and UI enhancements for a pleasant user experience and a modern application, ergonomics, performance, structuring and internal design.
+Development of the Dashboard application for integration with various modules and sub-applications for customers and the company itself.
