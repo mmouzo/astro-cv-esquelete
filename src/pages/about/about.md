@@ -1,7 +1,7 @@
 ---
 title: about
 name: "Joharisoa Ratsirarson"
-designation: "Software Engineer"
+designation: "Software Engineer | AWS Certified"
 location: Antananarivo, Madagascar
 pronouns: "he/him/el"
 website: "https://joharisoa-ratsirarson.me"
