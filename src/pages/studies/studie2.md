@@ -1,8 +1,8 @@
 ---
-title: Advanced SWAT Tactics and Leadership Training
-location: FBI Academy
-url: http://ni.sb/mehanad
-institute: FBI Academy
-date: 1975-1980
-tags: ["Conflict Resolution", "Strategic Planning", "Risk Assessment", "Firearms Training", "Emergency Response"]
+title: Bachelor's Degree
+location: Antananarivo, Madagascar
+url: https://www.ituniversity-mg.com/
+institute: IT University
+date: Sep 2019 - Nov 2022
+tags: ["Computer Programming", "Web Design", "Web development", "Database and Network Administration", "Project Management"]
 ---
