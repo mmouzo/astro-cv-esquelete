@@ -1,6 +1,6 @@
 ---
 title: about
-name: "Cezar Kelso"
+name: "Joharisoa Ratsirarson"
 designation: "Senior Detective"
 location: Los Angeles, CA 90001
 pronouns: "he/him/el"
