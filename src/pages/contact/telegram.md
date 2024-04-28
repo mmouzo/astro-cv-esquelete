@@ -1,5 +1,5 @@
 ---
 title: Telegram
 icon: mdi:telegram
-url: https://t.me/
+url: https://telegram.com
 ---

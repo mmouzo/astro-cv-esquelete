@@ -1,5 +1,5 @@
 ---
 title: Email
 icon: carbon:email
-url: mailto:juz@hoper.ph
+url: ratsirarsonj@gmail.com
 ---
