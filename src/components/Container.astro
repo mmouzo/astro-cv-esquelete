@@ -10,8 +10,10 @@ const studies = await Astro.glob("../pages/studies/*.md");
 const certificates = await Astro.glob("../pages/certificates/*.md");
 const blogs = await Astro.glob("../pages/blogs/*.md");
 const contact = await Astro.glob("../pages/contact/*.md");
-const PDF = "/CV_2024-04-21_Joharisoa_RATSIRARSON.pdf";
+const PDF = "/CV_2024-11-10_Joharisoa_RATSIRARSON.pdf";
 const certif_aws = "/AWS Certified Cloud Practitioner certificate.pdf";
+const certif_toefl = "/TOEFL_SCORE_JOHARISOA_JULY2024.pdf";
+
 ---
 
 <div class="join join-vertical gap-1">
@@ -115,7 +117,7 @@ const certif_aws = "/AWS Certified Cloud Practitioner certificate.pdf";
           <object data={PDF} type="application/pdf" width="100%"></object>
         </figure>
         <div class="card-body">
-          <h2 class="card-title">Resume (in French)</h2>
+          <h2 class="card-title">Resume</h2>
           <p>View and download my resume by clicking on the button below</p>
           <div class="card-actions justify-end">
             <a target="_blank" href={PDF}>
@@ -129,7 +131,7 @@ const certif_aws = "/AWS Certified Cloud Practitioner certificate.pdf";
       </div>
     </div>
 
-    <div class="flex justify-center w-full">
+    <div class="flex justify-center w-full mb-4">
       <div
         class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
       >
@@ -137,12 +139,34 @@ const certif_aws = "/AWS Certified Cloud Practitioner certificate.pdf";
           <object data={certif_aws} type="application/pdf" width="100%"></object>
         </figure>
         <div class="card-body">
-          <h2 class="card-title">Certificate AWS Cloud Practitioner</h2>
-          <p>View and download my AWS Cloud Practitioner Certifcation</p>
+          <h2 class="card-title">AWS Cloud Practitioner</h2>
+          <p>View and download my AWS CCP</p>
           <div class="card-actions justify-end">
             <a target="_blank" href={certif_aws}>
               <button class="btn btn-outline">
-                <p>Download Certificate</p>
+                <p>Download certificate</p>
+                <Icon name="carbon:document-pdf" class="w-6 h-6 ml-1" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center w-full">
+      <div
+        class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
+      >
+        <figure>
+          <object data={certif_toefl} type="application/pdf" width="100%"></object>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">TOELF Certification and Score Details</h2>
+          <p>View and download my TOEFL Certifcation and Score Details</p>
+          <div class="card-actions justify-end">
+            <a target="_blank" href={certif_aws}>
+              <button class="btn btn-outline">
+                <p>Download Score Details</p>
                 <Icon name="carbon:document-pdf" class="w-6 h-6 ml-1" />
               </button>
             </a>

@@ -1,7 +1,7 @@
 ---
 title: about
 name: "Joharisoa Ratsirarson"
-designation: "Software Engineer | AWS CCP Certified | MSc Student at Université Côte d'Azur"
+designation: "Software Engineer | AWS CCP (Certified Cloud Practitioner) | MSc Student at Université Côte d'Azur"
 location: Antananarivo, Madagascar
 pronouns: "he/him/el"
 website: "https://joharisoa.ratsirarson.live"

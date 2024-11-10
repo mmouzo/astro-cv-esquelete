@@ -2,7 +2,7 @@
 title: Developer Intern
 date: Jun 2022 - Nov 2022 (6 months)
 url: https://www.nexthope.net/
-location: Antananarivo, Madagascar
+location: Antananarivo, Madagascar (On Site)
 org: Nexthope
 tags: ["React", "Javascript", "Python", "Django", "MySQL", "Seats.io", "Symfony"]
 ---

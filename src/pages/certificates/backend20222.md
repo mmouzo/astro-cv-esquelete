@@ -1,8 +1,8 @@
 ---
-title: Javascript Algorithms and Data Structures
-org: freeCodeCamp
-tags: [Javascript, DSA, Algorithms]
-url: https://freecodecamp.org/certification/fccabda4fc5-cb61-4a8d-87b5-861b0ef7d780/javascript-algorithms-and-data-structures
-date: Oct 2023
+title: AWS Certified Cloud Practitioner (CCP)
+org: Amazon Web Services
+tags: [Cloud Computing, EC2, RDS, Document DB, AWS Fundamentals, VPC, API Gateway, Cloudfront]
+url: https://www.credly.com/badges/df67c974-9cc6-439d-ade0-fecdb7f7e15b/linked_in_profile
+date: Feb 2024
 ---
-A certified holder of the Javascript Algorithms and Data Structures certification by freeCodeCamp is proficient in implementing and optimizing algorithms and data structures in JavaScript, enabling them to solve complex problems efficiently.
+Certified AWS Cloud Practitioner with foundational knowledge of cloud concepts and AWS services. Proficient in the AWS Management Console, pricing models, and core services. Skilled in basic security practices, resource optimization, and scalability, ensuring data protection and compliance. Experienced in deploying cost-effective, high-availability solutions that drive business agility and innovation.

@@ -1,8 +1,14 @@
 ---
 title: Bachelor's Degree
 location: Antananarivo, Madagascar
-url: https://www.ituniversity-mg.com/
+url: https://www.ituniversity-mg.com/page/cursus/
 institute: IT University
 date: Sep 2019 - Nov 2022
-tags: ["Computer Programming", "Web Design", "Web development", "Database and Network Administration", "Project Management"]
+tags: [
+    "Computer Programming",
+    "Web Design",
+    "Web development",
+    "Database and Network Administration",
+    "Project Management"
+    ]
 ---

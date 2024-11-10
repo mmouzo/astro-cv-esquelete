@@ -1,8 +1,8 @@
 ---
-title: AWS Certified Cloud Practitioner (CCP)
-org: Amazon Web Services
-tags: [Cloud Computing, EC2, RDS, Document DB, AWS Fundamentals, VPC, API Gateway, Cloudfront]
-url: https://www.credly.com/badges/df67c974-9cc6-439d-ade0-fecdb7f7e15b/linked_in_profile
-date: Feb 2024 - Feb 2027
+title: TOEFL Ibt
+org: ETS
+tags: [English, Grammar, Expressions, Writing, Speaking, Listening, Reading]
+url: https://achievements.toefl.org/f4065769-4538-46da-a058-ad8758b9aeca#gs.gqcr9d
+date: July 2024
 ---
-A Certified AWS Cloud Practitioner possesses foundational knowledge of cloud concepts and AWS services. They demonstrate proficiency in navigating the AWS Management Console, understanding AWS pricing models, and identifying key AWS services for common use cases. With expertise in basic AWS security practices, they ensure data protection and compliance. Skilled in deploying and managing AWS infrastructure, they optimize resource utilization and scalability. Their understanding of AWS global infrastructure enables effective implementation of cloud solutions. Certified AWS Cloud Practitioners excel in cost-effective cloud solutions, enhancing business agility and innovation while maintaining high availability and fault tolerance.
+The TOEFL iBT is an English language proficiency test widely used for university admissions and visa applications. It assesses reading, listening, speaking, and writing skills in an academic context. Scores demonstrate a test-taker’s ability to understand and communicate effectively in English, helping institutions evaluate their readiness for study or work in an English-speaking environment.
