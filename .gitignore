@@ -396,3 +396,33 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Astro build outputs
+dist/
+.astro/
+
+# Vercel deployment artifacts
+.vercel/
+
+# Package manager lockfiles (keep package-lock.json for consistency)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+.env.test.local
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

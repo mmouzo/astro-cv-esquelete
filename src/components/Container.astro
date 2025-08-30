@@ -17,7 +17,7 @@ type MarkdownInstance = {
     url_name?: string;
     icon?: string;
   };
-  compiledContent: () => Promise<string>;
+  compiledContent: () => string;
 };
 
 const works = Object.values(import.meta.glob("../pages/works/*.md", { eager: true })) as MarkdownInstance[];
@@ -32,18 +32,18 @@ const PDF = "/cv-20240219.pdf";
 <div class="join join-vertical gap-1">
   <AccordionLayout title={"About"} icon={"carbon:identification"}>
     <article class="text-justify">
-      <Fragment set:html={await about.compiledContent()} />
+      <Fragment set:html={about.compiledContent()} />
     </article>
   </AccordionLayout>
 
   <AccordionLayout title={"Work"} icon={"carbon:construction"}>
     {
-      works.map(async (item) => {
+      works.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={await item.compiledContent()}
+            description={item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={item.frontmatter.org}
@@ -73,12 +73,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Projects"} icon={"carbon:tools"}>
     {
-      projects.map(async (item) => {
+      projects.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={await item.compiledContent()}
+            description={item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={"View project"}
@@ -90,12 +90,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Certifications"} icon={"carbon:certificate"}>
     {
-      certificates.map(async (item) => {
+      certificates.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={await item.compiledContent()}
+            description={item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={"View Certificate"}
@@ -107,12 +107,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Blogs"} icon={"carbon:pen"}>
     {
-      blogs.map(async (item) => {
+      blogs.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={await item.compiledContent()}
+            description={item.compiledContent()}
             url={item.frontmatter.url}
             url_name={item.frontmatter.url_name}
           />
