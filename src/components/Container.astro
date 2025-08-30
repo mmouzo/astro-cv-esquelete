@@ -4,30 +4,46 @@ import AccordionLayout from "../layouts/AccordionLayout.astro";
 import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 import ContactCard from "./ContactCard.astro";
-const works = await Astro.glob("../pages/works/*.md");
-const projects = await Astro.glob("../pages/projects/*.md");
-const studies = await Astro.glob("../pages/studies/*.md");
-const certificates = await Astro.glob("../pages/certificates/*.md");
-const blogs = await Astro.glob("../pages/blogs/*.md");
-const contact = await Astro.glob("../pages/contact/*.md");
+
+type MarkdownInstance = {
+  frontmatter: {
+    title: string;
+    date?: string;
+    tags?: string[];
+    url?: string;
+    org?: string;
+    location?: string;
+    institute?: string;
+    url_name?: string;
+    icon?: string;
+  };
+  compiledContent: () => Promise<string>;
+};
+
+const works = Object.values(import.meta.glob("../pages/works/*.md", { eager: true })) as MarkdownInstance[];
+const projects = Object.values(import.meta.glob("../pages/projects/*.md", { eager: true })) as MarkdownInstance[];
+const studies = Object.values(import.meta.glob("../pages/studies/*.md", { eager: true })) as MarkdownInstance[];
+const certificates = Object.values(import.meta.glob("../pages/certificates/*.md", { eager: true })) as MarkdownInstance[];
+const blogs = Object.values(import.meta.glob("../pages/blogs/*.md", { eager: true })) as MarkdownInstance[];
+const contact = Object.values(import.meta.glob("../pages/contact/*.md", { eager: true })) as MarkdownInstance[];
 const PDF = "/cv-20240219.pdf";
 ---
 
 <div class="join join-vertical gap-1">
   <AccordionLayout title={"About"} icon={"carbon:identification"}>
     <article class="text-justify">
-      <Fragment set:html={about.compiledContent()} />
+      <Fragment set:html={await about.compiledContent()} />
     </article>
   </AccordionLayout>
 
   <AccordionLayout title={"Work"} icon={"carbon:construction"}>
     {
-      works.map((item) => {
+      works.map(async (item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
+            description={await item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={item.frontmatter.org}
@@ -47,7 +63,7 @@ const PDF = "/cv-20240219.pdf";
             timeframe={item.frontmatter.date}
             location={item.frontmatter.location}
             tags={item.frontmatter.tags}
-            url={item.url}
+            url={item.frontmatter.url}
             url_name={item.frontmatter.institute}
           />
         );
@@ -57,12 +73,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Projects"} icon={"carbon:tools"}>
     {
-      projects.map((item) => {
+      projects.map(async (item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
+            description={await item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={"View project"}
@@ -74,12 +90,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Certifications"} icon={"carbon:certificate"}>
     {
-      certificates.map((item) => {
+      certificates.map(async (item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
+            description={await item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
             url_name={"View Certificate"}
@@ -91,12 +107,12 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Blogs"} icon={"carbon:pen"}>
     {
-      blogs.map((item) => {
+      blogs.map(async (item) => {
         return (
           <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
+            description={await item.compiledContent()}
             url={item.frontmatter.url}
             url_name={item.frontmatter.url_name}
           />
