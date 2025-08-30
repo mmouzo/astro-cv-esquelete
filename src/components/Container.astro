@@ -4,12 +4,28 @@ import AccordionLayout from "../layouts/AccordionLayout.astro";
 import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 import ContactCard from "./ContactCard.astro";
-const works = await Astro.glob("../pages/works/*.md");
-const projects = await Astro.glob("../pages/projects/*.md");
-const studies = await Astro.glob("../pages/studies/*.md");
-const certificates = await Astro.glob("../pages/certificates/*.md");
-const blogs = await Astro.glob("../pages/blogs/*.md");
-const contact = await Astro.glob("../pages/contact/*.md");
+
+type MarkdownInstance = {
+  frontmatter: {
+    title: string;
+    date?: string;
+    tags?: string[];
+    url?: string;
+    org?: string;
+    location?: string;
+    institute?: string;
+    url_name?: string;
+    icon?: string;
+  };
+  compiledContent: () => string;
+};
+
+const works = Object.values(import.meta.glob("../pages/works/*.md", { eager: true })) as MarkdownInstance[];
+const projects = Object.values(import.meta.glob("../pages/projects/*.md", { eager: true })) as MarkdownInstance[];
+const studies = Object.values(import.meta.glob("../pages/studies/*.md", { eager: true })) as MarkdownInstance[];
+const certificates = Object.values(import.meta.glob("../pages/certificates/*.md", { eager: true })) as MarkdownInstance[];
+const blogs = Object.values(import.meta.glob("../pages/blogs/*.md", { eager: true })) as MarkdownInstance[];
+const contact = Object.values(import.meta.glob("../pages/contact/*.md", { eager: true })) as MarkdownInstance[];
 const PDF = "/cv-20240219.pdf";
 ---
 
@@ -47,7 +63,7 @@ const PDF = "/cv-20240219.pdf";
             timeframe={item.frontmatter.date}
             location={item.frontmatter.location}
             tags={item.frontmatter.tags}
-            url={item.url}
+            url={item.frontmatter.url}
             url_name={item.frontmatter.institute}
           />
         );
