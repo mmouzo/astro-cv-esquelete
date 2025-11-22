@@ -1,103 +1,41 @@
 ---
-import "@fontsource-variable/dm-sans";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { Icon } from "astro-icon/components";
+import * as about from "./about/about.md";
+
+const title = `${about.frontmatter.name} - ${about.frontmatter.designation}`;
 ---
 
-<html lang="gl">
-  <head>
-    <script is:inline>
-      if (localStorage.getItem("theme") === null) {
-        document.documentElement.setAttribute("data-theme", "lofi");
-      } else
-        document.documentElement.setAttribute(
-          "data-theme",
-          localStorage.getItem("theme")
-        );
-    </script>
-    <script>
-      import { themeChange } from "theme-change";
-      themeChange();
-    </script>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/favicon.webp" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Cezar Kelso CV</title>
-  </head>
-  <body class="flex flex-col min-h-screen">
-    <Header />
-    <div
-      class="flex items-center absolute top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 xl:top-10 xl:right-10 z-10"
-    >
-      <Icon name="carbon:moon" class="w-4 h-4" />
-      <input
-        type="checkbox"
-        data-toggle-theme="black,lofi"
-        data-act-class="ACTIVECLASS"
-        class="toggle toggle-sm mx-1 bg-secondary"
-        checked
-      />
-      <Icon name="carbon:light" class="w-4 h-4" />
+<BaseLayout title={title}>
+  <Header />
+  <div
+    class="flex items-center absolute top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 xl:top-10 xl:right-10 z-10"
+  >
+    <Icon name="carbon:moon" class="w-4 h-4" />
+    <input
+      type="checkbox"
+      data-toggle-theme="black,lofi"
+      data-act-class="ACTIVECLASS"
+      class="toggle toggle-sm mx-1 bg-secondary"
+      checked
+      aria-label="Toggle theme"
+    />
+    <Icon name="carbon:light" class="w-4 h-4" />
+  </div>
+
+  <div
+    class="divider mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-secondary"
+  >
+  </div>
+  <main
+    class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll py-2 grid w-[95vw]"
+  >
+    <div class="container">
+      <Container />
     </div>
-
-    <div
-      class="divider mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-secondary"
-    >
-    </div>
-    <main
-      class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll py-2 grid w-[95vw]"
-    >
-      <div class="container">
-        <Container />
-      </div>
-    </main>
-    <Footer class="flex justify-center items-center py-4" />
-  </body>
-</html>
-
-<style is:global>
-  body {
-    font-family: "DM Sans Variable", sans-serif;
-  }
-
-  @media (min-width: 768px) {
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    * {
-      font-size: 12px;
-    }
-  }
-
-  .overflow-y-scroll::-webkit-scrollbar {
-    width: 3px;
-  }
-
-  .overflow-y-scroll::-webkit-scrollbar-thumb {
-    background-color: oklch(var(--s));
-  }
-
-  .overflow-y-scroll {
-    scrollbar-width: 1px;
-  }
-
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-</style>
+  </main>
+  <Footer class="flex justify-center items-center py-4" />
+</BaseLayout>
