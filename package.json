@@ -1,7 +1,7 @@
 {
   "name": "astro-cv-esquelete",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=22.0.0"
   },
@@ -18,7 +18,7 @@
     "@fontsource-variable/dm-sans": "^5.0.5",
     "@iconify-json/carbon": "^1.1.31",
     "@iconify-json/mdi": "^1.1.64",
-    "astro": "^5.13.5",
+    "astro": "^5.16.0",
     "astro-compress": "^2.2.21",
     "astro-icon": "^1.1.0",
     "framer-motion": "^11.18.2",

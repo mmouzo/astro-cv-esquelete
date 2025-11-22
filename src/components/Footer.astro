@@ -1,17 +1,25 @@
 ---
+import { Image } from "astro:assets";
+import flagImage from "../assets/gl_flag_128x.png";
+
 const getYear = () => new Date().getFullYear().toString();
 ---
 
-<footer
-  class="flex justify-center items-center bg-transparent py-4"
->
+<footer class="flex justify-center items-center bg-transparent py-4">
   <p class="flex items-center text-center font-light text-sm text-secondary">
     &copy; {getYear()} developed by
-    <a target="_blank" class="link ml-1" href="https://github.com/mmouzo">Martín Mouzo Silva</a>
+    <a
+      target="_blank"
+      class="link ml-1"
+      href="https://github.com/mmouzo"
+      rel="noopener noreferrer">Martín Mouzo Silva</a
+    >
   </p>
-  <img
+  <Image
     class="rounded-full w-4 h-4 ml-2 shadow-md border border-black"
-    src="gl_flag_128x.png"
+    src={flagImage}
     alt="Galician Flag"
+    width={16}
+    height={16}
   />
 </footer>

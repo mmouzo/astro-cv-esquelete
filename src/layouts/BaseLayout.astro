@@ -1,11 +1,86 @@
-<!DOCTYPE html>
+---
+import "@fontsource-variable/dm-sans";
+import { themeChange } from "theme-change";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "CV Template",
+    description = "A minimalist CV template built with Astro and Tailwind CSS",
+} = Astro.props;
+---
+
+<!doctype html>
 <html lang="gl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-</head>
-<body>
-    <slot />
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/favicon.webp" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <title>{title}</title>
+        <script is:inline>
+            if (localStorage.getItem("theme") === null) {
+                document.documentElement.setAttribute("data-theme", "lofi");
+            } else
+                document.documentElement.setAttribute(
+                    "data-theme",
+                    localStorage.getItem("theme"),
+                );
+        </script>
+        <script>
+            import { themeChange } from "theme-change";
+            themeChange();
+        </script>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <slot />
+    </body>
 </html>
+
+<style is:global>
+    body {
+        font-family: "DM Sans Variable", sans-serif;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        * {
+            font-size: 12px;
+        }
+    }
+
+    .overflow-y-scroll::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .overflow-y-scroll::-webkit-scrollbar-thumb {
+        background-color: oklch(var(--s));
+    }
+
+    .overflow-y-scroll {
+        scrollbar-width: 1px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+</style>
